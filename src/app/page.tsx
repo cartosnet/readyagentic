@@ -64,7 +64,7 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <Link
-                href="/auth?view=sign-up"
+                href="https://calendly.com/matthieu-doer/30mn"
                 className="bg-[#FFBE1A] text-black text-sm px-4 py-2 rounded-lg hover:bg-[#FFBE1A]/90"
               >
                 Rejoindre
@@ -88,7 +88,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="#community"
+                  href="https://calendly.com/matthieu-doer/30mn"
                   className="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-[#FFBE1A] text-black font-medium hover:bg-[#FFBE1A]/90 transition-colors"
                 >
                   Rejoindre la Communauté
@@ -153,7 +153,7 @@ export default function Home() {
             échanger des expériences et progresser ensemble dans un environnement collaboratif.
           </p>
           <Link
-            href="https://discord.com"
+            href="https://calendly.com/matthieu-doer/30mn"
             className="bg-[#FFBE1A] text-black text-sm px-6 py-3 rounded-lg hover:bg-[#FFBE1A]/90 transition-colors"
           >
             Rejoindre le Discord

@@ -20,49 +20,56 @@ interface WelcomeEmailProps {
 
 export const WelcomeEmail = ({
   username = 'there',
-  loginUrl = 'https://app.bestsaaskit.pro/login',
+  loginUrl = 'https://www.readyagentic.com/login',
 }: WelcomeEmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>Welcome to Best SAAS Kit Pro - Your journey begins here!</Preview>
+      <Preview>Bienvenue sur ReadyAGentinc - Votre voyage commence ici !</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Heading style={h1}>Welcome to Best SAAS Kit Pro! 🚀</Heading>
+          <Heading style={h1}>Bienvenue sur ReadyAGentinc ! 🚀</Heading>
           
-          <Text style={text}>Hi {username},</Text>
+          <Text style={text}>Bonjour {username},</Text>
           
           <Text style={text}>
-            We're thrilled to have you on board! Thank you for choosing Best SAAS Kit Pro
-            for your business needs. We're confident that our platform will help you
-            achieve your goals and streamline your operations.
+            Nous sommes ravis de vous accueillir ! Merci d'avoir choisi ReadyAGentinc
+            pour vos besoins professionnels. Notre plateforme est conçue pour vous aider
+            à atteindre vos objectifs et optimiser vos opérations.
           </Text>
 
           <Section style={buttonContainer}>
             <Button style={button} href={loginUrl}>
-              Get Started
+              Commencer
             </Button>
           </Section>
 
           <Text style={text}>
-            Here's what you can do next:
+            Voici les prochaines étapes :
           </Text>
 
           <ul style={list}>
-            <li>Complete your profile setup</li>
-            <li>Explore our features and integrations</li>
-            <li>Check out our documentation</li>
-            <li>Connect with our community</li>
+            <li>Complétez votre profil</li>
+            <li>Découvrez nos fonctionnalités</li>
+            <li>Consultez notre documentation</li>
+            <li>Rejoignez notre communauté</li>
           </ul>
 
           <Hr style={hr} />
 
           <Text style={footer}>
-            If you have any questions, feel free to{' '}
-            <Link href="mailto:support@bestsaaskit.pro" style={link}>
-              reach out to our support team
+            Si vous avez des questions, n'hésitez pas à{' '}
+            <Link href="mailto:matthieu.doer@gmail.com" style={link}>
+              contacter notre équipe support
             </Link>
-            . We're here to help!
+            . Nous sommes là pour vous aider !
+          </Text>
+
+          <Text style={socialLinks}>
+            <Link href="https://www.readyagentic.com" style={link}>
+              Visitez notre site
+            </Link>
+            {/* Espace réservé pour les futurs liens sociaux */}
           </Text>
         </Container>
       </Body>
@@ -140,4 +147,11 @@ const footer = {
 const link = {
   color: '#5850ec',
   textDecoration: 'underline',
+};
+
+const socialLinks = {
+  textAlign: 'center' as const,
+  padding: '20px 48px 0',
+  color: '#666666',
+  fontSize: '14px',
 }; 
